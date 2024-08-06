@@ -37,7 +37,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 9rem;
 }
 
@@ -46,7 +46,7 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 10rem;
 }
 
