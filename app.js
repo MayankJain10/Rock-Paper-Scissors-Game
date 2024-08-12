@@ -12,6 +12,37 @@ let resetBtn = document.querySelector("#reset-btn");
 let userCircle = document.querySelector("#user-choice-img");
 let compCircle = document.querySelector("#comp-choice-img");
 
+let modeBtn = document.querySelector("#mode");
+let currMode = "light";
+let body = document.querySelector("body");
+
+modeBtn.addEventListener("click", ()=>{
+    if(currMode === "light"){
+        currMode = "dark";
+        // document.querySelector("body").style.backgroundColor="black";
+        body.classList.add("dark");
+        body.classList.remove("light");
+
+        userCircle.classList.add("light");
+        compCircle.classList.add("light");
+
+        userCircle.classList.remove("dark");
+        compCircle.classList.remove("dark");
+    }else{
+        currMode = "light";
+        // document.querySelector("body").style.backgroundColor="white";
+        body.classList.add("light");
+        body.classList.remove("dark");
+
+        compCircle.classList.add("dark");
+        userCircle.classList.add("dark");
+
+        userCircle.classList.remove("light");
+        compCircle.classList.remove("light");
+    }
+    console.log(currMode);
+})
+
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
         const userChoice = choice.getAttribute("id");

@@ -3,7 +3,6 @@
     padding: 0;
     text-align: center;
 }
-
 h1 {
     background-color: #081b31;
     color: white;
@@ -92,7 +91,7 @@ h1 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #081b31; /* Blue color */
+    background-color: black; /* Blue color */
     /* border: none; */
     /* display: flex; */
     /* justify-content: center; */
@@ -105,4 +104,28 @@ h1 {
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+
+#mode{
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    align-items: flex-start;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    background-color: #081b31;
+    color: azure;
+    border: none;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
 }
